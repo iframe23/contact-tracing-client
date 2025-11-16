@@ -7,7 +7,9 @@ export default {
       badge: {
         variant: 'primary',
         text: 'NEW'
-      }
+      },
+      class: '1',
+      role: 1
     },
     {
       title: true,
@@ -16,17 +18,23 @@ export default {
       wrapper: {
         element: '',
         attributes: {}
-      }
+      },
+      class: '2',
+      role: 1
     },
     {
       name: 'Colors',
       url: '/theme/colors',
-      icon: 'icon-drop'
+      icon: 'icon-drop',
+      class: '2',
+      role: 1
     },
     {
       name: 'Typography',
       url: '/theme/typography',
-      icon: 'icon-pencil'
+      icon: 'icon-pencil',
+      class: '2',
+      role: 1
     },
     {
       title: true,
@@ -41,6 +49,8 @@ export default {
       name: 'Base',
       url: '/base',
       icon: 'icon-puzzle',
+      class: '1',
+      role: 1,
       children: [
         {
           name: 'Breadcrumbs',
@@ -128,6 +138,8 @@ export default {
       name: 'Buttons',
       url: '/buttons',
       icon: 'icon-cursor',
+      class: '1',
+      role: 1,
       children: [
         {
           name: 'Buttons',
@@ -154,12 +166,16 @@ export default {
     {
       name: 'Charts',
       url: '/charts',
-      icon: 'icon-pie-chart'
+      icon: 'icon-pie-chart',
+      class: '2',
+      role: 1
     },
     {
       name: 'Icons',
       url: '/icons',
       icon: 'icon-star',
+      class: '1',
+      role: 1,
       children: [
         {
           name: 'CoreUI Icons',
@@ -195,6 +211,8 @@ export default {
       name: 'Notifications',
       url: '/notifications',
       icon: 'icon-bell',
+      class: '3',
+      role: 1,
       children: [
         {
           name: 'Alerts',
@@ -217,10 +235,12 @@ export default {
       name: 'Widgets',
       url: '/widgets',
       icon: 'icon-calculator',
+      class: '3',
       badge: {
         variant: 'primary',
         text: 'NEW'
-      }
+      },
+      role: 1
     },
     {
       divider: true
@@ -233,6 +253,8 @@ export default {
       name: 'Pages',
       url: '/pages',
       icon: 'icon-star',
+      class: '1',
+      role: 1,
       children: [
         {
           name: 'Login',
@@ -260,26 +282,31 @@ export default {
       name: 'Disabled',
       url: '/dashboard',
       icon: 'icon-ban',
+      class: '3',
       badge: {
         variant: 'secondary',
         text: 'NEW'
       },
       attributes: { disabled: true },
+      role: 1
     },
     {
       name: 'Download CoreUI',
       url: 'http://coreui.io/vue/',
       icon: 'icon-cloud-download',
-      class: 'mt-auto',
+      class: '1',
       variant: 'success',
-      attributes: { target: '_blank', rel: 'noopener' }
+      attributes: { target: '_blank', rel: 'noopener' },
+      role: 1
     },
     {
       name: 'Try CoreUI PRO',
       url: 'http://coreui.io/pro/vue/',
       icon: 'icon-layers',
       variant: 'danger',
-      attributes: { target: '_blank', rel: 'noopener' }
+      class: '1',
+      attributes: { target: '_blank', rel: 'noopener' },
+      role: 1
     },
   ]
 }

@@ -1,195 +1,208 @@
-# CoreUI Vue - Free Bootstrap Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%20Vue%20Admin%20Template%20&url=http://coreui.io/vue/&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
+# Contact Tracing System
 
-### Check out our Vue Admin Templates and support CoreUI Development
+A comprehensive contact tracing and visitor management system built with Vue.js and CoreUI. This application helps organizations track visitors, residents, and their health status for effective contact tracing and monitoring.
 
-[![Bootstrap Admin Templates Bundle](https://genesisui.com/img/bundle2.png)](https://genesisui.com/bundle.html?support=1)
+## Features
 
-[Check out Bootstrap Admin Templates Bundle](https://genesisui.com/bundle.html?support=1)
+- **Visitor Management**: Track visitors with QR code scanning and logging
+- **Resident Logs**: Monitor resident movements and health status
+- **Contact Tracing**: Comprehensive contact tracing capabilities
+- **Health Status Monitoring**: Track and manage health status of visitors and residents
+- **Travel History**: Record and monitor travel history
+- **Visiting Points Management**: Manage multiple visiting points/locations
+- **Dashboard Analytics**: Role-based dashboards for different user types (Admin, Registrar, Dean, Instructor, Accountant, Visiting Point)
+- **QR Code Integration**: QR code generation and scanning for quick check-in/check-out
+- **User Management**: Multiple user roles with appropriate permissions
+- **Student Management**: Student enrollment, scheduling, and grading
+- **Course Management**: Course and curriculum management
+- **Financial Reporting**: Account statements and collections reporting
 
-This is Vue.js version of our Bootstrap 4 admin template [CoreUI](https://github.com/coreui/coreui-free-bootstrap-admin-template).
+## Technology Stack
 
-Please help us on [Product Hunt](https://www.producthunt.com/posts/coreui-open-source-bootstrap-4-admin-template-with-angular-2-react-js-vue-js-support) & [Designer News](https://www.designernews.co/stories/81127). Thanks in advance!
+- **Frontend**: Vue.js 2.6.11
+- **UI Framework**: CoreUI 2.x, Bootstrap 4, Bootstrap-Vue
+- **State Management**: Vuex
+- **Routing**: Vue Router
+- **HTTP Client**: Axios
+- **Charts**: Chart.js with vue-chartjs
+- **QR Code**: vue-qrcode-reader, qrcode.vue
+- **Maps**: vue2-google-maps
+- **Icons**: Font Awesome, CoreUI Icons, Simple Line Icons
 
-Why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Boostrap Admin Templates suck.](https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
+## Prerequisites
 
-CoreUI is an Open Source Vue & Bootstrap Admin Template. But CoreUI is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if that's not enough, let’s just add that CoreUI consists bunch of unique features and over 1000 high quality icons.
-
-CoreUI is based on Bootstrap 4 and offers 6 versions: [HTML5 AJAX](https://github.com/coreui/coreui-free-bootstrap-admin-template-ajax), [HTML5 Static](https://github.com/coreui/coreui-free-bootstrap-admin-template), [AngularJS](https://github.com/mrholek/CoreUI-AngularJS), [Angular 2+](https://github.com/coreui/coreui-free-angular-admin-template), [React.js](https://github.com/coreui/coreui-free-react-admin-template) & [Vue.js](https://github.com/coreui/coreui-free-vue-admin-template).
-
-CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
-
-[![CoreUI Vue Free Bootstrap Admin Template](http://coreui.io/assets/img/coreui.png "CoreUI Vue Free Bootstrap Admin Template")](http://coreui.io)
-
-**NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/coreui) to keep you update with this template.
-
-## Demo
-
-A fully functional demo is available at [CoreUI](http://coreui.io/)
-
-## Table of Contents
-
-* [Versions](#versions)
-* [CoreUI Pro](#coreui-pro)
-* [Admin Templates built on top of CoreUI Pro](#admin-templates-built-on-top-of-coreui-pro)
-* [Installation](#installation)
-* [Usage](#usage)
-* [What's included](#whats-included)
-* [Documentation](#documentation)
-* [Contributing](#contributing)
-* [Versioning](#versioning)
-* [Creators](#creators)
-* [Community](#community)
-* [Community Projects](#community-projects)
-* [License](#license)
-* [Support CoreUI Development](#support-coreui-development)
-
-## Versions
-
-CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
-
-* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-* [CoreUI Free Bootstrap Admin Template (Ajax)](https://github.com/coreui/coreui-free-bootstrap-admin-template-ajax)
-* [CoreUI Free Angular 2+ Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
-* 🚧 [CoreUI Free .NET Core 2 Admin Template](https://github.com/mrholek/CoreUI-NET) (Available Soon)
-* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
-* 🚧 [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
-
-## CoreUI Pro
-
-* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/pro/)
-* 💪  [CoreUI Pro Bootstrap Admin Template (Ajax)](https://coreui.io/pro/)
-* 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/pro/angular)
-* 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react)
-* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue)
-
-## Admin Templates built on top of CoreUI Pro
-
-| CoreUI Pro | Prime | Root | Alba | Leaf |
-| --- | --- | --- | --- | --- |
-| [![CoreUI Pro Admin Template](https://coreui.io/assets/img/example-coureui.jpg)](https://coreui.io/pro/) | [![Prime Admin Template](https://genesisui.com/assets/img/templates/prime1280.jpg)](https://genesisui.com/admin-templates/bootstrap/prime/?support=1) | [![Root Admin Template](https://genesisui.com/assets/img/templates/root1280.jpg)](https://genesisui.com/admin-templates/bootstrap/root/?support=1) | [![Alba Admin Template](https://genesisui.com/assets/img/templates/alba1280.jpg)](https://genesisui.com/admin-templates/bootstrap/alba/?support=1) | [![Leaf Admin Template](https://genesisui.com/assets/img/templates/leaf1280.jpg)](https://genesisui.com/admin-templates/bootstrap/leaf/?support=1)
+- Node.js (>= 8.10.x)
+- npm (>= 5.6.0)
+- Backend REST API server (PHP/Laravel or similar)
+- MySQL/MariaDB database
 
 ## Installation
 
-### Clone repo
+### Clone the repository
 
-``` bash
-# clone the repo
-$ git clone https://github.com/coreui/coreui-free-vue-admin-template.git CoreUI-Vue
-
-# go into app's directory
-$ cd CoreUI-Vue
-
-# install app's dependencies
-$ npm install
+```bash
+git clone <your-repository-url>
+cd contact3
 ```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+## Configuration
+
+### 1. Environment Setup
+
+Create a `.env` file in the root directory (see `.env.example` for reference):
+
+```env
+VUE_APP_API_URL=http://localhost/contactRest/
+VUE_APP_BASE_URL=http://localhost:8080/
+VUE_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
+```
+
+### 2. Configure API Endpoints
+
+Update the API endpoints in `src/main.js`:
+
+```javascript
+// For production
+export const base_url = Vue.prototype.$base_url = 'https://your-domain.com/contact/';
+export const api_url = Vue.prototype.$api_url = 'https://your-domain.com/contactRest/';
+
+// For development
+export const base_url = Vue.prototype.$base_url = 'http://localhost:8080/';
+export const api_url = Vue.prototype.$api_url = 'http://localhost/contactRest/';
+```
+
+### 3. Google Maps API Key
+
+Update the Google Maps API key in `src/main.js`:
+
+```javascript
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'YOUR_GOOGLE_MAPS_API_KEY',
+    libraries: 'places',
+  }
+})
+```
+
+## Database Setup
+
+1. Import the database schema from `contact.sql`:
+
+```bash
+mysql -u your_username -p your_database_name < contact.sql
+```
+
+2. Configure your backend API to connect to this database
 
 ## Usage
 
-``` bash
-# serve with hot reload at localhost:8080
+### Development Server
+
+```bash
+# Serve with hot reload at localhost:8080
 npm run serve
+```
 
-# build for production with minification
+### Production Build
+
+```bash
+# Build for production with minification
 npm run build
+```
 
-# run linter
+### Linting
+
+```bash
+# Run linter
 npm run lint
+```
 
-# run unit tests
+### Testing
+
+```bash
+# Run unit tests
 npm run test:unit
 
-# run e2e tests
+# Run e2e tests
 npm run test:e2e
-
 ```
 
-For a detailed explanation on how things work, check out the [Vue CLI Guide](https://cli.vuejs.org/guide/).
-
-## What's included
-
-Within the download you'll find the following directories and files:
+## Project Structure
 
 ```
-CoreUI-Vue/
-├── public/              # pure static assets (directly copied)
-│   └── index.html           # index.html template
-├── src/                 # project root
-│   ├── assets/                 # module assets (processed by webpack)
-│   │   └── scss/               # user styles
-│   ├── components/             # ui components
-│   ├── containers/             # ui containers
-│   ├── router/                 # routing 
-│   ├── shared/                 # utils
-│   ├── views/                  # ui views
-│   ├── _nav.js                 # sidebar nav config
-│   ├── App.vue                 # main app component
-│   └── main.js                 # app entry file
-├── test/
-│   └── unit/            # unit tests
-│   └── e2e/             # e2e tests
-├── .eslintrc.js         # eslint config
-├── .gitignore           # defaults for gitignore
-├── .postcssrc.js        # postcss config
-├── CHANGELOG.md
-├── README.md
-├── babel.config.js      # babel config
-├── jest.config.js       # jest config
-├── vue.config.js        # vue-cli config
-├── LICENSE
-└── package.json         # build scripts and dependencies
+contact3/
+├── public/              # Static assets
+│   ├── img/            # Images and logos
+│   ├── jsQR.min.js     # QR code library
+│   └── worker.js       # Service worker
+├── src/                
+│   ├── assets/         # Styles and SCSS
+│   ├── components/     # Reusable components
+│   ├── containers/     # Layout containers
+│   ├── router/         # Vue Router configuration
+│   ├── shared/         # Shared utilities and API
+│   ├── store/          # Vuex store modules
+│   ├── views/          # Application views
+│   ├── App.vue         # Root component
+│   └── main.js         # Application entry point
+├── tests/              # Test files
+├── .gitignore          
+├── package.json        
+└── vue.config.js       # Vue CLI configuration
 ```
 
-## Bugs and feature requests
+## Backend API
 
-Have a bug or a feature request? [Please open a new issue](https://github.com/coreui/coreui-free-vue-admin-template/issues).
+This frontend application requires a REST API backend. The API endpoints are defined in `src/shared/api.js`.
 
-## Documentation
+Expected API structure:
+- `/user/*` - User management endpoints
+- `/school/*` - School/institution management
+- `/curriculum/*` - Course and curriculum management
+- `/contact_trace/*` - Contact tracing endpoints
+- `/visitor/*` - Visitor management
+- `/resident/*` - Resident management
 
-CoreUI's documentation, is hosted on our website [CoreUI](http://coreui.io/)
+## Security Notes
 
-## Contributing
+⚠️ **Important**: Before deploying to production:
 
-Please read through our [contributing guidelines](https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+1. **Remove sensitive data** from `contact.sql` (passwords, tokens)
+2. **Update Google Maps API key** and restrict it properly
+3. **Configure environment variables** for different environments
+4. **Enable HTTPS** for production deployments
+5. **Secure your backend API** with proper authentication
+6. **Review user permissions** and access controls
 
-Editor preferences are available in the [editor config](https://github.com/coreui/coreui-free-vue-admin-template/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+## User Roles
 
-## Versioning
+The system supports multiple user roles:
+- **Admin**: Full system access
+- **Registrar**: Student and enrollment management
+- **Dean**: Academic oversight and reporting
+- **Instructor**: Course and grading management
+- **Accountant**: Financial management and reporting
+- **Visiting Point**: Visitor check-in/check-out management
 
-For transparency into our release cycle and in striving to maintain backward compatibility,CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+## License
 
-See [the Releases section of our project](https://github.com/coreui/coreui-free-vue-admin-template/releases) for changelogs for each release version.
+This project is based on CoreUI Free Vue Admin Template which is released under the MIT License.
 
-## Creators
+## Acknowledgments
 
-**Łukasz Holeczek**
+- Built with [CoreUI](https://coreui.io/) - Open Source Bootstrap Admin Template
+- Original CoreUI Vue template by [Łukasz Holeczek](https://github.com/mrholek)
 
-* <https://twitter.com/lukaszholeczek>
-* <https://github.com/mrholek>
+## Support
 
-**Andrzej Kopański**
+For issues and questions, please open an issue in the repository.
 
-* <https://github.com/xidedix>
+---
 
-## Community
-
-Get updates on CoreUI's development and chat with the project maintainers and community members.
-
-- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
-- Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
-
-### Community Projects
-
-Some of projects created by community but not maintained by CoreUI team.
-
-* [NuxtJS + Vue CoreUI](https://github.com/muhibbudins/nuxt-coreui)
-* [Colmena](https://github.com/colmena/colmena)
-
-## Copyright and license
-
-copyright 2017 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-vue-admin-template/blob/master/LICENSE).
-There is only one limitation you cannot re-distribute the `CoreUI` as stock nor if you modify the `CoreUI`. In the past we faced some problems with persons who tried to sell `CoreUI` based templates.
-
-## Support CoreUI Development
-CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek), buying [CoreUI Pro Version](https://coreui.io/pro) or buying one of our [premium admin templates](https://genesisui.com/?support=1).
-
-As of now I am exploring the possibility of working on CoreUI fulltime - if you are a business that is building core products using CoreUI, I am also open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).
+**Note**: This is a contact tracing and visitor management system. Please ensure compliance with local data privacy regulations when deploying and using this system.
