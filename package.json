@@ -1,13 +1,13 @@
 {
-  "name": "contact-tracing",
+  "name": "contact-tracing-client",
   "version": "1.0.0",
   "description": "Contact Tracing and Visitor Management System",
   "author": "iframe23",
-  "homepage": "https://github.com/iframe23/contact-tracing",
+  "homepage": "https://github.com/iframe23/contact-tracing-client",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:iframe23/contact-tracing.git"
+    "url": "git@github.com:iframe23/contact-tracing-client.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
